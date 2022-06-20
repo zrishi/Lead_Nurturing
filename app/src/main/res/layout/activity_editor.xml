@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".EditorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Overview category -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/category_overview" />
+
+            <!-- Input fields -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:paddingLeft="4dp">
+
+                <!-- Name field -->
+                <EditText
+                    android:id="@+id/edit_name"
+                    style="@style/EditorFieldStyle"
+                    android:autofillHints="name"
+                    android:hint="@string/hint_name"
+                    android:inputType="text"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/edit_address"
+                    style="@style/EditorFieldStyle"
+                    android:autofillHints="postalAddress"
+                    android:hint="@string/hint_address"
+                    android:inputType="text"
+                    android:minHeight="48dp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/edit_state"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_state"
+                    android:inputType="text"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/edit_phNo"
+                    style="@style/EditorFieldStyle"
+                    android:autofillHints="phone"
+                    android:hint="@string/hint_phone"
+                    android:inputType="number"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/edit_mail"
+                    style="@style/EditorFieldStyle"
+                    android:autofillHints="emailAddress"
+                    android:hint="@string/hint_email"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Qualification category -->
+        <LinearLayout
+            android:id="@+id/edit_qualification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/category_qualification" />
+
+            <!-- Input fields -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:paddingLeft="4dp">
+
+                <!-- Name field -->
+                <EditText
+                    android:id="@+id/edit_10_board"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_10_board"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    tools:ignore="Autofill" />
+
+                <EditText
+                    android:id="@+id/edit_10_school"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_10_school"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    tools:ignore="Autofill" />
+
+                <EditText
+                    android:id="@+id/edit_10_marks"
+                    style="@style/EditorFieldStyle"
+                    android:drawableEnd="@drawable/ic_percentage"
+                    android:hint="@string/hint_10_marks"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    tools:ignore="Autofill" />
+
+                <EditText
+                    android:id="@+id/edit_10_year"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_10_year"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    tools:ignore="Autofill" />
+
+                <EditText
+                    android:id="@+id/edit_12_board"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_12_board"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    tools:ignore="Autofill"
+                    android:layout_marginTop="12dp"/>
+
+                <EditText
+                    android:id="@+id/edit_12_school"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_12_school"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    tools:ignore="Autofill" />
+
+                <EditText
+                    android:id="@+id/edit_12_marks"
+                    style="@style/EditorFieldStyle"
+                    android:drawableEnd="@drawable/ic_percentage"
+                    android:hint="@string/hint_12_marks"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    tools:ignore="Autofill" />
+
+                <EditText
+                    android:id="@+id/edit_12_year"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_12_year"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Rank category -->
+        <LinearLayout
+            android:id="@+id/edit_rank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CategoryStyle"
+                android:text="@string/category_rank" />
+
+            <!-- Input fields -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:paddingLeft="4dp">
+
+                <EditText
+                    android:id="@+id/edit_jee"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_jee"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    tools:ignore="Autofill" />
+
+                <EditText
+                    android:id="@+id/edit_wb_jee"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_wb_jee"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="16dp"
+            android:background="#1E6EAF"
+            android:padding="4dp"
+            android:text="@string/action_save"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#EFEBE9"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</ScrollView>

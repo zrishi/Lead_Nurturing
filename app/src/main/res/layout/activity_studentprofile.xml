@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".StudentProfile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_margin="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/shape"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:id="@+id/edit_lead">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/scoreLayout">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginEnd="4dp"
+                        android:padding="16dp"
+                        android:text="@string/lead_score"
+                        android:textColor="@color/black"
+                        android:textSize="25sp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/lead_minus"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="8dp"
+                        android:text="@string/minus"
+                        android:textColor="#651FFF" />
+
+                    <TextView
+                        android:id="@+id/lead_score_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:minWidth="30dp"
+                        android:minHeight="30dp"
+                        android:text="@string/zero"
+                        android:textSize="16sp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/lead_add"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/add"
+                        android:textColor="#651FFF" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="0dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/action_admitted"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:minHeight="48dp"
+                        android:text="@string/action_admitted"
+                        android:drawableStart="@drawable/ic_baseline_done_24"
+                        tools:targetApi="m"
+                        android:textSize="20sp"
+                        android:background="@color/COMPLETED"
+                        android:textColor="@color/white"
+                        android:padding="8dp"
+                        android:visibility="gone"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/action_discard"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:minHeight="48dp"
+                        android:text="@string/action_discarded"
+                        android:drawableStart="@drawable/ic_baseline_cancel_24"
+                        tools:targetApi="m"
+                        android:textSize="20sp"
+                        android:background="@color/DISCARDED"
+                        android:textColor="@color/white"
+                        android:padding="8dp"
+                        android:layout_marginStart="4dp"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/student_admitted"
+                        app:drawableStartCompat="@drawable/ic_baseline_done_24"
+                        android:textSize="25sp"
+                        android:padding="8dp"
+                        app:drawableTint="#12D519"
+                        android:textColor="#1BE122"
+                        android:visibility="gone"
+                        android:id="@+id/student_admit"
+                        android:layout_marginStart="4dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:padding="8dp"
+                        android:id="@+id/student_discard"
+                        android:text="@string/student_discarded"
+                        android:textColor="@color/DISCARDED"
+                        android:textSize="25sp"
+                        android:visibility="gone"
+                        app:drawableStartCompat="@drawable/ic_baseline_cancel_24"
+                        app:drawableTint="@color/DISCARDED" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <!-- Overview category -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <!-- Label -->
+                <TextView
+                    style="@style/CategoryStyle"
+                    android:text="@string/category_overview"
+                    android:textColor="@color/studentProfileText" />
+
+                <!-- Input fields -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:paddingLeft="4dp">
+
+                    <!-- Name field -->
+
+                    <EditText
+                        android:id="@+id/text_name"
+                        style="@style/EditorFieldStyle"
+                        android:autofillHints="name"
+                        android:hint="@string/hint_name"
+                        android:inputType="text"
+                        android:minHeight="48dp" />
+
+                    <EditText
+                        android:id="@+id/text_address"
+                        style="@style/EditorFieldStyle"
+                        android:autofillHints="postalAddress"
+                        android:hint="@string/hint_address"
+                        android:inputType="text"
+                        android:minHeight="48dp" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/text_state"
+                        style="@style/EditorFieldStyle"
+                        android:hint="@string/hint_state"
+                        android:inputType="text"
+                        android:minHeight="48dp" />
+
+                    <EditText
+                        android:id="@+id/text_phNo"
+                        style="@style/EditorFieldStyle"
+                        android:autofillHints="phone"
+                        android:hint="@string/hint_phone"
+                        android:inputType="number"
+                        android:minHeight="48dp" />
+
+                    <EditText
+                        android:id="@+id/text_mail"
+                        style="@style/EditorFieldStyle"
+                        android:autofillHints="emailAddress"
+                        android:hint="@string/hint_email"
+                        android:inputType="textEmailAddress"
+                        android:minHeight="48dp"
+                        android:textColorHint="#757575" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- Qualification category -->
+            <LinearLayout
+                android:id="@+id/text_qualification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!-- Label -->
+                <TextView
+                    style="@style/CategoryStyle"
+                    android:text="@string/category_qualification"
+                    android:textColor="@color/studentProfileText" />
+
+                <!-- Input fields -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:paddingLeft="4dp">
+
+                    <!-- Name field -->
+                    <EditText
+                        android:id="@+id/text_10_board"
+                        style="@style/EditorFieldStyle"
+                        android:hint="@string/hint_10_board"
+                        android:inputType="text"
+                        android:minHeight="48dp"
+                        tools:ignore="Autofill" />
+
+                    <EditText
+                        android:id="@+id/text_10_school"
+                        style="@style/EditorFieldStyle"
+                        android:hint="@string/hint_10_school"
+                        android:inputType="text"
+                        android:minHeight="48dp"
+                        tools:ignore="Autofill" />
+
+                    <EditText
+                        android:id="@+id/text_10_marks"
+                        style="@style/EditorFieldStyle"
+                        android:drawableEnd="@drawable/ic_percentage"
+                        android:hint="@string/hint_10_marks"
+                        android:inputType="text"
+                        android:minHeight="48dp"
+                        tools:ignore="Autofill" />
+
+                    <EditText
+                        android:id="@+id/text_10_year"
+                        style="@style/EditorFieldStyle"
+                        android:hint="@string/hint_10_year"
+                        android:inputType="text"
+                        android:minHeight="48dp"
+                        tools:ignore="Autofill" />
+
+                    <EditText
+                        android:id="@+id/text_12_board"
+                        style="@style/EditorFieldStyle"
+                        android:layout_marginTop="12dp"
+                        android:hint="@string/hint_12_board"
+                        android:inputType="text"
+                        android:minHeight="48dp"
+                        tools:ignore="Autofill" />
+
+                    <EditText
+                        android:id="@+id/text_12_school"
+                        style="@style/EditorFieldStyle"
+                        android:hint="@string/hint_12_school"
+                        android:inputType="text"
+                        android:minHeight="48dp"
+                        android:textColorHint="#757575"
+                        tools:ignore="Autofill" />
+
+                    <EditText
+                        android:id="@+id/text_12_marks"
+                        style="@style/EditorFieldStyle"
+                        android:drawableEnd="@drawable/ic_percentage"
+                        android:hint="@string/hint_12_marks"
+                        android:inputType="text"
+                        android:minHeight="48dp"
+                        tools:ignore="Autofill" />
+
+                    <EditText
+                        android:id="@+id/text_12_year"
+                        style="@style/EditorFieldStyle"
+                        android:hint="@string/hint_12_year"
+                        android:inputType="text"
+                        android:minHeight="48dp"
+                        tools:ignore="Autofill" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <!-- Rank category -->
+            <LinearLayout
+                android:id="@+id/text_rank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <!-- Label -->
+                <TextView
+                    style="@style/CategoryStyle"
+                    android:text="@string/category_rank"
+                    android:textColor="@color/studentProfileText" />
+
+                <!-- Input fields -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:paddingLeft="4dp">
+
+                    <EditText
+                        android:id="@+id/text_jee"
+                        style="@style/EditorFieldStyle"
+                        android:hint="@string/hint_jee"
+                        android:inputType="text"
+                        android:minHeight="48dp"
+                        tools:ignore="Autofill" />
+
+                    <EditText
+                        android:id="@+id/text_wb_jee"
+                        style="@style/EditorFieldStyle"
+                        android:hint="@string/hint_wb_jee"
+                        android:inputType="text"
+                        android:minHeight="48dp"
+                        tools:ignore="Autofill" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.nambimobile.widgets.efab.ExpandableFabLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.nambimobile.widgets.efab.Overlay
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.nambimobile.widgets.efab.ExpandableFab
+            android:id="@+id/fab_Contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/studentProfileText"
+            android:contentDescription="@string/contacts"
+            app:efab_enabled="true"
+            app:efab_icon="@drawable/ic_baseline_add_contacts" />
+
+        <com.nambimobile.widgets.efab.FabOption
+            android:id="@+id/fab_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/ic_baseline_call"
+            app:label_text="Call" />
+
+        <com.nambimobile.widgets.efab.FabOption
+            android:id="@+id/fab_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/ic_baseline_message"
+            app:label_text="Message" />
+
+        <com.nambimobile.widgets.efab.FabOption
+            android:id="@+id/fab_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/ic_baseline_email_24"
+            app:label_text="Email" />
+
+    </com.nambimobile.widgets.efab.ExpandableFabLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

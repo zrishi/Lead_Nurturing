@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+   >
+
+    <fragment
+        android:id="@+id/nav_applicant"
+        android:name="com.example.leadnurturing.ui.applicant.ApplicantFragment"
+        android:label="@string/menu_applicant"
+        tools:layout="@layout/fragment_applicant" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.leadnurturing.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.example.leadnurturing.ui.dashboard.DashBoardFragment"
+        android:label="@string/menu_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+</navigation>

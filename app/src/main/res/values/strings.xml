@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">Lead Nurturing</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="username">USERNAME</string>
+    <string name="password">PASSWORD</string>
+    <string name="login">LOGIN</string>
+    <string name="welcome_crm">WELCOME</string>
+    <string name="title_activity_nav">NAV</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Rakesh Das</string>
+    <string name="nav_header_subtitle">rakeshdas@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_applicant">Applicants</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_dashboard">DashBoard</string>
+    <string name="category_overview">Overview</string>
+    <string name="category_qualification">Qualification</string>
+    <string name="category_rank">Rank</string>
+    <string name="empty_view_title_text">It\'s a bit lonely here</string>
+    <!-- Subtitle text for the empty view that prompts the user to add a Student [CHAR LIMIT=50] -->
+    <string name="empty_view_applicant_subtitle_text">Get started by adding a student</string>
+    <string name="empty_view_dashboard_subtitle_text">Get started by contacting a student</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_address">Address</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_state">State</string>
+    <string name="hint_phone">Phone No</string>
+    <string name="hint_10_board">10TH BOARD</string>
+    <string name="hint_10_school">10TH School</string>
+    <string name="hint_10_marks">10TH Marks</string>
+    <string name="hint_10_year">10TH Passing Year</string>
+    <string name="hint_12_board">12TH BOARD</string>
+    <string name="hint_12_school">12TH School</string>
+    <string name="hint_12_marks">12TH Marks</string>
+    <string name="hint_12_year">12TH Passing Year</string>
+    <string name="hint_jee">JEE RANK</string>
+    <string name="hint_wb_jee">WBJEE RANK</string>
+    <string name="action_save">Save</string>
+    <string name="contacts">Contacts</string>
+    <string name="call">Call</string>
+    <string name="message">Message</string>
+    <string name="mail">Mail</string>
+    <string name="action_delete">Delete</string>
+    <string name="lead_score">Lead Score: </string>
+    <string name="action_edit">Edit</string>
+
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="edit_tittle_add">ADD STUDENT</string>
+
+    <string name="edit_tittle_view">STUDENT PROFILE</string>
+
+    <string name="editor_insert_student_successful">Student Added</string>
+
+    <string name="editor_insert_student_failed">Student Not Added</string>
+
+    <string name="delete_dialog_msg">Delete this Student?</string>
+
+    <string name="cancel">Cancel</string>
+
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+
+    <string name="discard">Discard</string>
+
+    <string name="keep_editing">Keep Editing</string>
+
+    <string name="editor_update_student_successful">Student updated</string>
+
+    <string name="editor_update_student_failed">Error with updating Student</string>
+
+    <string name="editor_status_update_student_successful">Student Status updated</string>
+
+    <string name="editor_status_update_student_failed">Error with updating Student Status</string>
+
+    <string name="editor_delete_student_successful">Student deleted</string>
+
+    <string name="editor_delete_student_failed">Error with deleting Student</string>
+    <string name="zero">0</string>
+    <string name="add">+</string>
+    <string name="minus">-</string>
+    <string name="action_admitted">ADMITTED</string>
+    <string name="action_discarded">DISCARDED</string>
+    <string name="profile_name">Rakesh Das</string>
+    <string name="profile_job">Counselor</string>
+    <string name="profile_workplace">Dream Institute Of Technology</string>
+    <string name="profile_phone">+91 9905554596</string>
+    <string name="student_admitted">STUDENT ADMITTED</string>
+    <string name="student_discarded">STUDENT DISCARDED</string>
+
+
+</resources>
